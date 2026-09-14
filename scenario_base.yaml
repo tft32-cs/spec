@@ -1,0 +1,55 @@
+trial:
+  trial_id: TRIAL-001
+  n_sites: 12
+  patients_per_site: 20
+  duration_days: 540
+  dosing_interval_days: 7
+
+amendments:
+  n_amendments: 3
+  first_amendment_day: 90
+  spacing_days: 150
+  normal_ack_lag_days: 21
+  ack_lag_sd: 7
+
+adherence:
+  baseline_rate: 0.92
+  site_variation_sd: 0.03
+
+attestation:
+  baseline_rate: 0.97
+
+failures:
+  n_affected_sites: 3
+  types:
+    - protocol_lag
+    - adherence_decay
+    - missing_attestation
+  protocol_lag:
+    extra_lag_days: 200
+  adherence_decay:
+    floor_rate: 0.55
+    decay_days: 120
+  missing_attestation:
+    degraded_rate: 0.60
+  earliest_start_day: 120
+  latest_start_day: 400
+
+kri:
+  window_days: 28
+  min_events_in_window: 10
+
+detection:
+  continuous:
+    adherence_threshold: 0.75
+    attestation_threshold: 0.80
+    version_lag_threshold_days: 45
+    persistence_days: 3
+  audit:
+    interval_days: 90
+    lookback_days: 90
+    adherence_threshold: 0.75
+    attestation_threshold: 0.80
+    version_lag_threshold_days: 45
+
+seed: 1
