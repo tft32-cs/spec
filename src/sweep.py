@@ -34,6 +34,7 @@ import detect_continuous
 from generate import generate, _amendment_days
 from inject import inject
 from kri import compute_kris
+from evaluate import count_false_positives
 from run import load_config
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -81,7 +82,7 @@ def score(alerts, truth, cfg, arm_label, meta):
              "detected": len(cand) > 0, "latency_days": lat,
              "latency_from_effective_onset": lat_eff}
         )
-    n_fp = len(alerts) - len(matched)
+    n_fp = count_false_positives(alerts, truth)
     site_years = cfg["trial"]["n_sites"] * cfg["trial"]["duration_days"] / 365.0
     run_row = {**meta, "arm": arm_label, "n_false_positives": n_fp,
                "fp_per_site_year": n_fp / site_years}

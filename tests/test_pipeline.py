@@ -89,3 +89,29 @@ def test_no_alert_precedes_its_failure(pipeline, cfg):
     summary = evaluate(alerts, truth, cfg, seed=42)
     latencies = summary.median_latency_days.dropna()
     assert (latencies >= 0).all()
+
+
+def test_version_lag_does_not_reset_at_new_amendment(cfg):
+    """A site that never acknowledges keeps accruing lag across amendments."""
+    import pandas as pd
+    from generate import _amendment_days
+
+    amend = _amendment_days(cfg)
+    obs = pd.DataFrame(
+        [{"site_id": "S01", "day": d, "event_type": "dose_administered",
+          "attestation_status": "attested"} for d in range(1, cfg["trial"]["duration_days"] + 1, 7)]
+    )
+    lag = compute_kris(obs, cfg)
+    lag = lag[lag.kri_name == "version_lag_days"].set_index("day").value
+    day = max(d for d in lag.index if d > amend[1])
+    assert lag[day] == day - amend[0]
+
+
+def test_continuous_rearms_after_breach_clears(cfg):
+    import pandas as pd
+
+    values = [0.5] * 3 + [0.95] * 3 + [0.5] * 3
+    kris = pd.DataFrame({"site_id": "S01", "day": range(28, 28 + 7 * len(values), 7),
+                         "kri_name": "adherence_rate", "value": values, "n_events": 50})
+    alerts = detect_continuous.detect(kris, cfg)
+    assert len(alerts) == 2
