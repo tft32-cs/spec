@@ -115,3 +115,35 @@ def test_continuous_rearms_after_breach_clears(cfg):
                          "kri_name": "adherence_rate", "value": values, "n_events": 50})
     alerts = detect_continuous.detect(kris, cfg)
     assert len(alerts) == 2
+
+
+def _flat_kris(values, kri="adherence_rate", site="S01", start=7, step=7):
+    import pandas as pd
+    return pd.DataFrame({"site_id": site, "day": range(start, start + step * len(values), step),
+                         "kri_name": kri, "value": values, "n_events": 50})
+
+
+def test_control_charts_quiet_in_control_and_fire_on_shift(cfg):
+    from detect_control_chart import detect_cusum, detect_ewma
+
+    ref = {"adherence_rate": (0.92, 0.03)}
+    quiet = _flat_kris([0.92] * 40)
+    assert detect_cusum(quiet, cfg, ref, k=0.5, h=4).empty
+    assert detect_ewma(quiet, cfg, ref, lam=0.2, L=3).empty
+
+    # A 2-sd drop accumulates (2 - 0.5) = 1.5 per week, so CUSUM crosses h=4 on week 3.
+    shifted = _flat_kris([0.92] * 10 + [0.86] * 10)
+    a = detect_cusum(shifted, cfg, ref, k=0.5, h=4)
+    assert len(a) == 1 and a.detected_day.iloc[0] == 7 + 7 * 12
+    assert len(detect_ewma(shifted, cfg, ref, lam=0.2, L=3)) == 1
+
+
+def test_site_reference_uses_each_sites_own_run_in(cfg):
+    import pandas as pd
+    from detect_control_chart import site_reference
+
+    kris = pd.concat([_flat_kris([0.85] * 20, site="S01"), _flat_kris([0.95] * 20, site="S02")])
+    ref = {"adherence_rate": (0.90, 0.04), "within_sd": {"adherence_rate": 0.03}}
+    sref = site_reference(kris, cfg, ref, runin_day=56)
+    assert sref[("S01", "adherence_rate")] == (0.85, 0.03)
+    assert sref[("S02", "adherence_rate")] == (0.95, 0.03)
