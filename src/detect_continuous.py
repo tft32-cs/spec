@@ -43,7 +43,11 @@ def detect(kris, cfg):
             if _breached(kri_name, r.value, params):
                 run += 1
             else:
+                # Breach cleared: re-arm, so a later episode at the same site
+                # raises a new alert. Firing once per site-KRI for the whole
+                # trial let a single early noise alert mask a real failure.
                 run = 0
+                fired = False
             if run >= persistence and not fired:
                 alerts.append(
                     {

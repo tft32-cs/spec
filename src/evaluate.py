@@ -6,12 +6,26 @@ adding a third comparison arm later requires no change here.
 An alert is a true positive when it names a site and failure type that were
 actually injected and fires on or after the failure start day. Latency is
 measured from the true start day, which is why inject.py has to record it.
-A failure that is never alerted on is a miss; an alert that matches no failure
-is a false positive.
+A failure that is never alerted on is a miss. An alert is a false positive
+when it falls outside every injected failure window for its site and failure
+type; repeat alerts inside a real failure's window are not false positives.
 """
 
 import numpy as np
 import pandas as pd
+
+
+def count_false_positives(alerts, ground_truth):
+    """Alerts that fall inside no injected failure window for their site and type."""
+    if alerts.empty:
+        return 0
+    merged = alerts.reset_index().merge(
+        ground_truth[["site_id", "failure_type", "start_day", "end_day"]],
+        on=["site_id", "failure_type"], how="left",
+    )
+    inside = (merged.detected_day >= merged.start_day) & (merged.detected_day <= merged.end_day)
+    explained = merged[inside]["index"].unique()
+    return int(len(alerts) - len(explained))
 
 
 def evaluate(alerts, ground_truth, cfg, seed=None):
@@ -51,7 +65,7 @@ def evaluate(alerts, ground_truth, cfg, seed=None):
                 )
 
         pf = pd.DataFrame(per_failure)
-        n_fp = len(arm_alerts) - len(matched_alert_idx)
+        n_fp = count_false_positives(arm_alerts, ground_truth)
         detected = pf[pf.detected]
 
         rows.append(

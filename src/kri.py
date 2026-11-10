@@ -41,7 +41,6 @@ def compute_kris(observed, cfg, step_days=7):
 
         # Current protocol version as of this day.
         current_version = 1 + sum(1 for d in amendment_days if d <= day)
-        issued_day = amendment_days[current_version - 2] if current_version > 1 else 0
 
         for site in sites:
             g = by_site.get(site, win.iloc[0:0])
@@ -72,13 +71,17 @@ def compute_kris(observed, cfg, step_days=7):
                 }
             )
 
-            ack_day = ack_lookup.get((site, current_version))
-            if current_version == 1:
-                lag = 0.0
-            elif ack_day is not None and ack_day <= day:
-                lag = 0.0
-            else:
-                lag = float(day - issued_day)
+            # Days since the oldest issued version this site has still not
+            # acknowledged. Measuring from the current version alone reset the
+            # clock at every new amendment, so a site that never acknowledged
+            # anything looked compliant right after each issue date, and an
+            # audit cadence that happened to land there never saw it.
+            lag = 0.0
+            for v in range(2, current_version + 1):
+                ack_day = ack_lookup.get((site, v))
+                if ack_day is None or ack_day > day:
+                    lag = float(day - amendment_days[v - 2])
+                    break
             rows.append(
                 {
                     "site_id": site,
