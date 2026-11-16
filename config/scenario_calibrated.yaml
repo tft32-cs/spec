@@ -1,0 +1,66 @@
+# Calibrated scenario. Trial shape comes from 300 completed, industry-sponsored,
+# interventional Phase 3 trials started 2015-2019 (ClinicalTrials.gov API v2,
+# random sample, tools/fetch_ctgov.py; summary in docs/calibration.md). Amendment
+# inputs come from Tufts CSDD benchmarks, because ClinicalTrials.gov refuses
+# scripted access to record version histories.
+trial:
+  trial_id: TRIAL-CAL
+  n_sites: 41              # median sites, multi-site trials (IQR 18-93)
+  patients_per_site: 7     # median enrollment / sites (IQR 4-14)
+  duration_days: 716       # median start -> primary completion (IQR 471-1106)
+  dosing_interval_days: 7
+
+amendments:
+  n_amendments: 3          # Tufts CSDD: ~3.3-3.4 substantial amendments per Phase III protocol
+  first_amendment_day: 179 # spread evenly over the trial: 716 / (3 + 1)
+  spacing_days: 179
+  # Tufts CSDD (2024): sites operate under different protocol versions for a mean
+  # of 215 days. Read as site adoption spread across ~0-215 days: mean 107, sd 62
+  # (sd of a uniform 0-215 spread).
+  normal_ack_lag_days: 107
+  ack_lag_sd: 62
+
+adherence:
+  baseline_rate: 0.92
+  site_variation_sd: 0.03
+
+attestation:
+  baseline_rate: 0.97
+
+failures:
+  n_affected_sites: 10     # ~25% of sites, same share as the base scenario (3 of 12)
+  types:
+    - protocol_lag
+    - adherence_decay
+    - missing_attestation
+  protocol_lag:
+    extra_lag_days: 200
+  adherence_decay:
+    floor_rate: 0.55
+    decay_days: 120
+  missing_attestation:
+    degraded_rate: 0.60
+  earliest_start_day: 120
+  latest_start_day: 530    # same share of the trial as base (400 of 540)
+
+kri:
+  window_days: 28
+  min_events_in_window: 10
+  # 7 patients per site give ~6 doses a week, under min_events_in_window, so the
+  # control charts read non-overlapping 14-day windows in this scenario.
+  chart_window_days: 14
+
+detection:
+  continuous:
+    adherence_threshold: 0.75
+    attestation_threshold: 0.80
+    version_lag_threshold_days: 290
+    persistence_days: 3
+  audit:
+    interval_days: 90
+    lookback_days: 90
+    adherence_threshold: 0.75
+    attestation_threshold: 0.80
+    version_lag_threshold_days: 290
+
+seed: 1

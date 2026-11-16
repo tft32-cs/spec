@@ -45,10 +45,24 @@ PERSISTENCE = [1, 2, 3]
 AUDIT_INTERVALS = [28, 56, 84]
 
 
-def thresholds(t):
+def thresholds(t, cfg=None):
+    """Thresholds at tightness t (0 = lenient, 1 = tight).
+
+    Version lag is scaled to the scenario's normal acknowledgment window: the
+    lenient end is at least mean + 3 sd of routine lag and the tight end at
+    least mean + 1 sd, so routine adoption of an amendment is never a breach.
+    For the base and high-amendment scenarios (21 +/- 7 days) this leaves the
+    original 60 -> 28 day range unchanged.
+    """
+    lenient, tight = dict(LENIENT), dict(TIGHT)
+    if cfg is not None:
+        a = cfg["amendments"]
+        mu, sd = a["normal_ack_lag_days"], a["ack_lag_sd"]
+        lenient["version_lag_threshold_days"] = max(LENIENT["version_lag_threshold_days"], mu + 3 * sd)
+        tight["version_lag_threshold_days"] = max(TIGHT["version_lag_threshold_days"], mu + sd)
     out = {}
-    for k in LENIENT:
-        v = LENIENT[k] + t * (TIGHT[k] - LENIENT[k])
+    for k in lenient:
+        v = lenient[k] + t * (tight[k] - lenient[k])
         out[k] = int(round(v)) if k.endswith("_days") else float(v)
     return out
 

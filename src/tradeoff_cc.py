@@ -38,7 +38,7 @@ from generate import generate
 from inject import inject
 from kri import compute_kris
 from run import load_config
-from sweep import SCENARIOS, score
+from sweep import ALL_SCENARIOS, SCENARIOS, score
 from tradeoff import AUDIT_INTERVALS, PERSISTENCE, TIGHTNESS, thresholds
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -66,7 +66,7 @@ def run_seed(cfg, ref, seed, scen):
         run_rows.append(rr)
 
     for t in TIGHTNESS:
-        th = thresholds(t)
+        th = thresholds(t, cfg)
         for p in PERSISTENCE:
             c = copy.deepcopy(cfg)
             c["detection"]["continuous"].update(th, persistence_days=p)
@@ -86,6 +86,11 @@ def run_seed(cfg, ref, seed, scen):
 
 
 def matched(points):
+    """Fastest qualifying operating point per scenario, arm and false-alarm budget.
+
+    points.detection_rate is computed over the criterion failure types only
+    (see main); latency is over all types.
+    """
     rows = []
     for (scen, family), g in points.groupby(["scenario", "family"]):
         ok = g[g.detection_rate >= MIN_DETECTION]
@@ -109,10 +114,19 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--replications", type=int, default=100)
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--scenarios", nargs="+", default=list(SCENARIOS),
+                    help="which scenarios to run; results are merged into existing CSVs")
+    ap.add_argument("--tag", default="", help="suffix for output files, e.g. _calibrated")
+    ap.add_argument("--criterion-types", nargs="+", default=None,
+                    help="failure types that must reach MIN_DETECTION for an operating point to "
+                         "qualify (default: all). In the calibrated scenario late protocol lag can "
+                         "be undetectable by any arm before the trial ends, so it is reported "
+                         "separately instead of gating the comparison.")
     args = ap.parse_args()
 
     fail_rows, run_rows = [], []
-    for scen, path in SCENARIOS.items():
+    for scen in args.scenarios:
+        path = ALL_SCENARIOS[scen]
         cfg = load_config(path)
         ref = estimate_reference(cfg)
         print(f"{scen}: in-control reference {ref}", flush=True)  # noqa
@@ -127,7 +141,8 @@ def main():
     runs = pd.DataFrame(run_rows)
     keys = ["scenario", "family", "setting"]
     lat = failures.groupby(keys).latency_from_effective_onset
-    det = failures.groupby(keys).agg(detection_rate=("detected", "mean"))
+    crit = failures if args.criterion_types is None else failures[failures.failure_type.isin(args.criterion_types)]
+    det = crit.groupby(keys).agg(detection_rate=("detected", "mean"))
     det["median_latency_eff_onset"] = lat.median()
     det["latency_p25"] = lat.quantile(0.25)
     det["latency_p75"] = lat.quantile(0.75)
@@ -136,10 +151,10 @@ def main():
 
     out = ROOT / "results"
     out.mkdir(exist_ok=True)
-    points.to_csv(out / "cc_points.csv", index=False)
-    failures.to_csv(out / "cc_failures.csv", index=False)
+    points.to_csv(out / f"cc_points{args.tag}.csv", index=False)
+    failures.to_csv(out / f"cc_failures{args.tag}.csv", index=False)
     m = matched(points)
-    m.to_csv(out / "cc_matched.csv", index=False)
+    m.to_csv(out / f"cc_matched{args.tag}.csv", index=False)
 
     pd.set_option("display.width", 200)
     for scen, g in m.groupby("scenario"):
