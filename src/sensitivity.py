@@ -58,7 +58,10 @@ def variants(base):
         "calibrated": v(),
         "sites_18": v(trial__n_sites=18, failures__n_affected_sites=5),
         "sites_93": v(trial__n_sites=93, failures__n_affected_sites=23),
-        "pps_4": v(trial__patients_per_site=4),
+        # Chart window widened so a site's expected doses per window reach
+        # min_events_in_window (4 patients x 3 weekly doses = 12 >= 10), the same
+        # rule that gives 7 days at 20 patients and 14 days at 7.
+        "pps_4": v(trial__patients_per_site=4, kri__chart_window_days=21),
         "pps_14": v(trial__patients_per_site=14),
         "mild": v(failures__adherence_decay__floor_rate=0.75,
                   failures__missing_attestation__degraded_rate=0.80,
