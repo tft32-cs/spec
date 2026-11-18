@@ -55,18 +55,28 @@ from kri import compute_kris
 from schema import ALERT_COLUMNS, KRI_TO_FAILURE
 
 LOWER_IS_WORSE = {"adherence_rate", "attestation_rate"}
+# Only attestation_rate is a share of observed events, so only it needs a minimum
+# event count. adherence_rate divides by protocol-expected doses; filtering it on
+# observed events would drop exactly the windows where doses are missing, i.e. the
+# failure itself (this happened at 7 patients per site).
+NEEDS_MIN_EVENTS = {"attestation_rate"}
 CHART_WINDOW_DAYS = 7
 RUNIN_DAY = 112
 
 
+def chart_window(cfg):
+    """Chart window: weekly by default; a scenario can widen it (kri.chart_window_days)
+    when sites are too small to reach min_events_in_window in a week."""
+    return cfg["kri"].get("chart_window_days", CHART_WINDOW_DAYS)
+
+
 def chart_cfg(cfg):
-    """Config for the charts' non-overlapping weekly KRIs."""
-    c = {**cfg, "kri": {**cfg["kri"], "window_days": CHART_WINDOW_DAYS}}
-    return c
+    """Config for the charts' non-overlapping KRIs."""
+    return {**cfg, "kri": {**cfg["kri"], "window_days": chart_window(cfg)}}
 
 
 def chart_kris(observed, cfg):
-    return compute_kris(observed, chart_cfg(cfg), step_days=CHART_WINDOW_DAYS)
+    return compute_kris(observed, chart_cfg(cfg), step_days=chart_window(cfg))
 
 
 def estimate_reference(cfg, n_trials=20, seed=100_000):
@@ -79,7 +89,7 @@ def estimate_reference(cfg, n_trials=20, seed=100_000):
     for i in range(n_trials):
         rng = np.random.default_rng(seed + i)
         kris = chart_kris(generate(cfg, rng), cfg)
-        ok = (kris.kri_name == "version_lag_days") | (kris.n_events >= min_events)
+        ok = ~kris.kri_name.isin(NEEDS_MIN_EVENTS) | (kris.n_events >= min_events)
         frames.append(kris[ok & kris.value.notna()].assign(trial=i))
     clean = pd.concat(frames)
     rates = clean[clean.kri_name.isin(LOWER_IS_WORSE)]
@@ -101,7 +111,8 @@ def site_reference(kris, cfg, ref, runin_day=RUNIN_DAY):
     """
     min_events = cfg["kri"]["min_events_in_window"]
     run = kris[(kris.day <= runin_day) & kris.kri_name.isin(LOWER_IS_WORSE)
-               & (kris.n_events >= min_events) & kris.value.notna()]
+               & (~kris.kri_name.isin(NEEDS_MIN_EVENTS) | (kris.n_events >= min_events))
+               & kris.value.notna()]
     means = run.groupby(["site_id", "kri_name"]).value.mean()
     out = {}
     for (site, k), mu in means.items():
@@ -124,7 +135,7 @@ def _run_chart(kris, cfg, ref, update, limit, arm):
         for r in g.sort_values("day").itertuples():
             if pd.isna(r.value):
                 continue
-            if r.n_events < min_events and kri_name != "version_lag_days":
+            if kri_name in NEEDS_MIN_EVENTS and r.n_events < min_events:
                 continue
             stat = update(stat, _standardize(kri_name, r.value, ref, site))
             if stat > limit and not in_alarm:

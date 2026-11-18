@@ -13,6 +13,7 @@ Outputs:
     results/cc_gap.csv       days faster than the monthly audit, with 95% CI
 """
 
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -26,8 +27,9 @@ N_BOOT = 2000
 
 
 def main():
-    matched = pd.read_csv(RES / "cc_matched.csv")
-    fails = pd.read_csv(RES / "cc_failures.csv")
+    tag = sys.argv[1] if len(sys.argv) > 1 else ""  # e.g. _calibrated
+    matched = pd.read_csv(RES / f"cc_matched{tag}.csv")
+    fails = pd.read_csv(RES / f"cc_failures{tag}.csv")
     rng = np.random.default_rng(0)
     by_type, gaps = [], []
     for (scen, b), mm in matched[matched.fp_budget.isin(BUDGETS)].groupby(["scenario", "fp_budget"]):
@@ -58,10 +60,11 @@ def main():
                                  "days_faster_than_monthly_audit": base.median() - lat.median(),
                                  "ci_low": glo, "ci_high": ghi})
     bt, gp = pd.DataFrame(by_type), pd.DataFrame(gaps)
-    bt.to_csv(RES / "cc_by_type.csv", index=False)
-    gp.to_csv(RES / "cc_gap.csv", index=False)
+    bt.to_csv(RES / f"cc_by_type{tag}.csv", index=False)
+    gp.to_csv(RES / f"cc_gap{tag}.csv", index=False)
     pd.set_option("display.width", 200)
-    print(gp[gp.fp_budget == 0.02].round(1).to_string(index=False))
+    print(gp[gp.fp_budget == 0.05].round(1).to_string(index=False))
+    print(bt[(bt.fp_budget == 0.05)].pivot_table(index='family', columns='failure_type', values=['median_latency', 'detection_rate']).round(2).to_string())
 
 
 if __name__ == "__main__":

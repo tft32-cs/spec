@@ -1,0 +1,301 @@
+nct_id,phase,start_date,primary_completion_date,completion_date,enrollment,n_sites,sponsor,conditions
+NCT03508700,PHASE3,2018-04-19,2019-09-30,2019-09-30,93,16,"Tonix Pharmaceuticals, Inc.",PTSD
+NCT02522767,PHASE3,2015-10,2018-02-06,2018-04-03,228,93,Ferring Pharmaceuticals,Ulcerative Colitis
+NCT04618939,PHASE3,2016-10-20,2017-04-28,2017-04-28,218,9,"Boryung Biopharma Co., Ltd.",Diphtheria|Tetanus
+NCT03557307,PHASE3,2018-08-01,2021-04-16,2022-03-24,598,144,AstraZeneca,Asthma
+NCT02569242,PHASE3,2015-12-14,2020-10-23,2020-10-23,419,89,"Ono Pharmaceutical Co., Ltd.",Esophageal Cancer
+NCT03997383,PHASE3,2019-09-04,2022-06-20,2025-12-24,360,90,Alnylam Pharmaceuticals,Transthyretin Amyloidosis (ATTR) With Cardiomyopathy
+NCT03914326,PHASE3,2019-06-17,2024-08-23,2024-08-23,9651,492,Novo Nordisk A/S,"Diabetes Mellitus, Type 2"
+NCT02549352,PHASE3,2015-11,2016-09-22,2017-08,391,1,LEO Pharma,Actinic Keratosis
+NCT02634580,PHASE3,2016-02-27,2017-08-10,2018-05-26,61,35,Amgen,Hypercholesterolemia
+NCT03813160,PHASE3,2018-12-17,2021-03-31,2021-10-05,176,54,Corbus Pharmaceuticals Inc.,Dermatomyositis
+NCT02604342,PHASE3,2015-11-03,2017-01-26,2018-08-13,119,54,Hoffmann-La Roche,Non-small Cell Lung Cancer
+NCT03170518,PHASE3,2017-07-21,2023-09-20,2023-09-20,171,106,"Janssen Research & Development, LLC","Diabetes Mellitus, Type 2"
+NCT03004248,PHASE3,2016-12-09,2018-10-17,2018-10-17,2691,61,"Revance Therapeutics, Inc.",Glabellar Frown Lines
+NCT03679884,PHASE3,2018-10-09,2021-02-22,2021-02-22,804,106,Idorsia Pharmaceuticals Ltd.,Insomnia Disorder
+NCT05288400,PHASE3,2018-05-14,2018-12-18,2018-12-18,150,15,Servier,Essential Hypertension
+NCT02597049,PHASE3,2015-11,2017-02,2017-02,424,41,Eli Lilly and Company,Type 2 Diabetes Mellitus
+NCT02547233,PHASE3,2015-11,2016-11,2017-11,437,1,LEO Pharma,Actinic Keratosis
+NCT02981368,PHASE2|PHASE3,2016-11,2018-07,2018-07,385,10,"Progenics Pharmaceuticals, Inc.",Prostate Cancer
+NCT02446743,PHASE3,2015-11-17,2016-09-23,2016-09-23,531,12,GlaxoSmithKline,"Infections, Meningococcal"
+NCT04074161,PHASE3,2019-09-11,2021-03-27,2021-05-11,338,19,Novo Nordisk A/S,Overweight|Obesity
+NCT02974907,PHASE3,2016-11,2017-09,2018-03,601,10,"ReGenTree, LLC",Dry Eye Syndrome
+NCT03067714,PHASE3,2017-03-30,2020-03-25,2020-03-25,855,59,Nutricia Research,Immunity
+NCT02638805,PHASE3,2015-12,2017-10,2017-10,136,36,Intarcia Therapeutics,"Diabetes Mellitus, Type 2"
+NCT03877926,PHASE3,2019-03-11,2020-08-06,2020-08-06,3689,35,Emergent BioSolutions,Anthrax
+NCT04039503,PHASE3,2019-08-30,2020-12-22,2021-01-13,475,48,Eli Lilly and Company,Type 2 Diabetes
+NCT03931941,PHASE3,2019-07-30,2023-07-21,2023-07-21,793,51,Rebiotix Inc.,Clostridium Difficile Infection|Infection|Communicable Diseases
+NCT02517021,PHASE3,2015-11,2016-08,2016-08,405,74,Helsinn Healthcare SA,Chemotherapy-Induced Nausea and Vomiting
+NCT03580369,PHASE3,2018-10-17,2021-07-16,2022-06-14,1072,161,Novartis Pharmaceuticals,Chronic Spontaneous Urticaria
+NCT03349333,PHASE3,2015-09-10,2017-07-21,2018-05-21,85,1,Mundipharma (China) Pharmaceutical Co. Ltd,Refractory Peripheral T-Cell Lymphoma|Relapsed T-Cell Lymphoma
+NCT03062358,PHASE3,2017-04-27,2021-06-30,2024-10-15,453,41,Merck Sharp & Dohme LLC,"Carcinoma, Hepatocellular"
+NCT03845582,PHASE2|PHASE3,2019-05-07,2023-07-25,2024-06-30,200,24,"Alkeus Pharmaceuticals, Inc.","Geographic Atrophy|Age Related Macular Degeneration|AMD|Atrophy, Geographic"
+NCT02603705,PHASE3,2016-03-07,2017-06-15,2017-06-15,281,39,Egalet Ltd,Moderate-to-severe Chronic Noncancer Pain
+NCT03465787,PHASE3,2018-04-09,2022-10-26,2022-10-26,210,1,Bukwang Pharmaceutical,Schizophrenia
+NCT02358031,PHASE3,2015-03-19,2019-02-25,2023-07-19,882,0,Merck Sharp & Dohme LLC,Recurrent Head and Neck Cancer|Metastatic Head and Neck Cancer
+NCT03683030,PHASE3,2018-10-22,2022-02-18,2022-02-18,397,41,"Biosense Webster, Inc.",Atrial Fibrillation
+NCT03353350,PHASE3,2017-12-05,2020-01-29,2020-09-07,406,54,Hanmi Pharmaceutical Company Limited,Type 2 Diabetes Mellitus
+NCT02422615,PHASE3,2015-06-09,2017-11-03,2023-01-11,726,174,Novartis Pharmaceuticals,Advanced Breast Cancer
+NCT03699124,PHASE3,2019-06-19,2020-01-06,2020-06-22,1129,12,Bavarian Nordic,Smallpox
+NCT03355820,PHASE3,2018-02-28,2018-06-29,2018-06-29,228,1,GlaxoSmithKline,Cervical Intraepithelial Neoplasia
+NCT02389816,PHASE3,2015-04-10,2018-03-16,2018-03-16,493,47,Takeda,Major Depressive Disorder
+NCT02633813,PHASE3,2015-03,2015-11,2015-12,693,14,Genzum Life Sciences,Tinea Pedis
+NCT02452047,PHASE3,2015-08-21,2017-09-18,2017-09-18,50,0,Merck Sharp & Dohme LLC,Bacterial Infections
+NCT02741596,PHASE3,2016-05-26,2019-10-31,2019-10-31,212,43,Shire,Hereditary Angioedema (HAE)
+NCT03840616,PHASE3,2019-03-13,2020-12-02,2020-12-02,219,33,Mycovia Pharmaceuticals Inc.,Recurrent Vulvovaginal Candidiasis
+NCT03976362,PHASE3,2019-06-28,2023-09-21,2026-01-30,851,178,Merck Sharp & Dohme LLC,"Carcinoma, Squamous Cell, Non-small-cell Lung"
+NCT03906136,PHASE3,2019-06-04,2022-02-04,2022-09-22,304,47,Novartis Pharmaceuticals,Axial Spondyloarthritis
+NCT03824587,PHASE2|PHASE3,2019-02-28,2019-07-17,2019-07-17,236,48,Ardelyx,Hyperphosphatemia
+NCT03504423,PHASE3,2018-11-09,2021-08-16,2022-01-02,528,74,Cornerstone Pharmaceuticals,Pancreatic Cancer Metastatic
+NCT03036098,PHASE3,2017-03-24,2024-08-30,2026-10-20,1314,174,Bristol-Myers Squibb,Urothelial Cancer
+NCT03304379,PHASE3,2017-10-26,2019-12-13,2020-11-09,1650,71,Regeneron Pharmaceuticals,"Osteoarthritis, Knee|Osteoarthritis, Hip"
+NCT02722837,PHASE3,2016-04-04,2017-06-26,2017-09-13,119,15,Gilead Sciences,Hepatitis C Virus Infection
+NCT03630705,PHASE3,2018-10-17,2022-02-18,2022-02-18,525,11,"Sanofi Pasteur, a Sanofi Company",Healthy Volunteers (Meningococcal Infection)
+NCT02428491,PHASE3,2015-04-20,2017-01-11,2017-01-11,354,1,"Sanofi Pasteur, a Sanofi Company",Diphtheria|Tetanus|Pertussis|Poliomyelitis|Hepatitis B|Haemophilus Influenzae Type b
+NCT02729025,PHASE3,2016-04-14,2018-04-05,2018-04-05,129,15,Amgen,"Subjects With Hyperlipidemia, Dyslipidemia"
+NCT02802059,PHASE3,2015-10-07,2020-10-12,2020-10-12,567,6,Ardeypharm GmbH,Infections
+NCT03375502,PHASE2|PHASE3,2016-11-26,2019-01-29,2019-07-31,814,1,Green Cross Corporation,Healthy Children
+NCT03585270,PHASE3,2019-02-03,2022-06-13,2022-11-18,409,80,Idorsia Pharmaceuticals Ltd.,Aneurysmal Subarachnoid Hemorrhage
+NCT03954834,PHASE3,2019-06-03,2020-10-05,2020-10-28,478,53,Eli Lilly and Company,Type 2 Diabetes Mellitus
+NCT02675426,PHASE3,2015-12-17,2017-04-21,2022-03-10,661,167,AbbVie,Rheumatoid Arthritis
+NCT03738215,PHASE3,2018-11-09,2021-09-30,2021-09-30,759,125,AbbVie,Major Depressive Disorder
+NCT03616444,PHASE2|PHASE3,2018-12-03,2023-06-28,2023-06-28,400,1,"Jiangsu Famous Medical Technology Co., Ltd.",Gastroenterology
+NCT02652806,PHASE3,2015-12,2017-01-24,2017-06-14,305,31,Kyntra Bio,Anemia
+NCT03561883,PHASE3,2018-09-06,2020-07-28,2020-11-06,609,101,"Ironwood Pharmaceuticals, Inc.",Gastroesophageal Reflux Disease (GERD)
+NCT03922542,PHASE2|PHASE3,2019-04-16,2026-06-30,2026-06-30,508,1,Price Vision Group,Keratoconus|Ectasia Corneal
+NCT03349684,PHASE3,2018-03-05,2019-08-12,2019-08-21,287,29,Bayer,"Diabetes Mellitus, Type 2"
+NCT02913261,PHASE3,2017-03-10,2019-06-24,2021-04-23,310,103,Novartis Pharmaceuticals,Corticosteroid Refractory Acute Graft vs Host Disease
+NCT03945513,PHASE3,2019-12-03,2023-06-30,2023-09-08,1034,1,Insud Pharma,Contraception
+NCT03069352,PHASE3,2017-05-29,2019-02-15,2025-08-21,211,109,AbbVie,Acute Myeloid Leukemia (AML)
+NCT02876835,PHASE3,2016-09-27,2021-04-19,2021-04-19,3872,574,GlaxoSmithKline,Anaemia
+NCT02297438,PHASE3,2015-03-23,2020-08-31,2025-02-24,340,54,Pfizer,Breast Neoplasms
+NCT04109976,PHASE3,2019-08-13,2020-11-05,2020-11-13,214,47,UCB Biopharma SRL,Psoriatic Arthritis
+NCT04111159,PHASE3,2019-12-06,2020-06-19,2020-07-27,267,1,"Sichuan Haisco Pharmaceutical Group Co., Ltd",Sedation or Anesthesia
+NCT02682264,PHASE3,2016-03-09,2018-08-31,2018-08-31,609,74,Cassiopea SpA,Acne Vulgaris
+NCT03527212,PHASE3,2018-08-20,2019-03-15,2019-03-15,329,23,"Senju Pharmaceutical Co., Ltd.",Dry Eye Syndromes
+NCT03823404,PHASE2|PHASE3,2019-03-28,2022-01-01,2022-01-01,643,93,Cortexyme Inc.,Alzheimer Disease
+NCT02516046,PHASE3,2015-09,2018-06-13,2018-07-15,156,31,Avid Radiopharmaceuticals,Alzheimer's Disease
+NCT03301220,PHASE3,2017-11-07,2024-05-01,2026-05-04,390,163,"Janssen Research & Development, LLC",Smoldering Multiple Myeloma
+NCT02542384,PHASE2|PHASE3,2015-09,2018-04,2018-06,451,23,"Cara Therapeutics, Inc.",Post Abdominal Surgery Pain
+NCT02436096,PHASE3,2015-04,2016-09,2016-09,519,35,"Tonix Pharmaceuticals, Inc.",Fibromyalgia|Myofascial Pain Syndromes|Muscular Diseases|Musculoskeletal Diseases|Nervous System Diseases|Neuromuscular Diseases|Rheumatic Diseases
+NCT03469349,PHASE3,2018-05-01,2019-05-28,2019-08-28,366,20,Takeda,Peripheral Arterial Diseases
+NCT03631732,PHASE3,2018-08-28,2019-08-12,2020-08-19,496,82,Gilead Sciences,HIV-1 Infection
+NCT03767543,PHASE3,2019-03-11,2020-10-23,2020-10-23,265,32,Sanofi,Type 2 Diabetes Mellitus
+NCT03572933,PHASE3,2018-06-30,2020-07-31,2021-05-28,101,36,Marinus Pharmaceuticals,CDKL5 Deficiency Disorder
+NCT02456740,PHASE3,2015-07-17,2016-09-05,2017-06-19,955,129,Amgen,Migraine
+NCT04003155,PHASE3,2019-07-11,2020-10-29,2021-08-11,527,96,"Astellas Pharma Global Development, Inc.",Hot Flashes
+NCT03859427,PHASE3,2019-05-08,2023-03-31,2023-03-31,454,108,Amgen,Relapsed or Refractory Multiple Myeloma
+NCT03439072,PHASE3,2018-01-23,2018-04-18,2018-05-03,81,6,Xeris Pharmaceuticals,Insulin Hypoglycemia|Type 1 Diabetes Mellitus|Severe Hypoglycemia
+NCT04023552,PHASE3,2019-12-12,2026-07-16,2026-07-16,8323,902,Novartis Pharmaceuticals,Cardiovascular Disease and Lipoprotein(a)
+NCT02361216,PHASE3,2015-04,2016-03,2017-03,729,1,LEO Pharma,Actinic Keratosis
+NCT03597464,PHASE3,2019-09-29,2021-10-07,2021-10-07,216,1,Aurinia Pharmaceuticals Inc.,Lupus Nephritis
+NCT04085367,PHASE3,2019-09-30,2021-03-03,2021-04-07,557,60,Galderma R&D,Actinic Keratoses
+NCT02665234,PHASE3,2016-01,2017-02,2017-03,400,1,"Mimetogen Pharmaceuticals USA, Inc.",Keratoconjunctivitis Sicca
+NCT03751631,PHASE3,2018-11-15,2019-01-11,2019-01-11,70,1,Eyenovia Inc.,Mydriasis
+NCT04206072,PHASE2|PHASE3,2019-12-24,2022-07-30,2025-07-15,362,2,"Betta Pharmaceuticals Co., Ltd.",Non-Small Cell Lung Cancer|EGFR Gene Mutation
+NCT04078126,PHASE3,2019-09-10,2020-12-30,2020-12-30,35,4,AstraZeneca,Chronic Obstructive Pulmonary Disease (COPD)
+NCT02890173,PHASE3,2016-09,2017-07-11,2017-07-11,1001,1,"Daiichi Sankyo Co., Ltd.",Essential Hypertension
+NCT03340064,PHASE3,2017-11-30,2021-06-01,2023-07-28,38,21,UCB Japan Co. Ltd.,Partial Seizures
+NCT03861039,PHASE3,2019-03-30,2021-01-26,2021-02-16,443,34,Eli Lilly and Company,Type 2 Diabetes Mellitus
+NCT03952130,PHASE3,2019-05-29,2022-01-10,2022-01-10,354,30,Eli Lilly and Company,Type 1 Diabetes Mellitus
+NCT03197740,PHASE3,2017-10-12,2020-07-03,2020-07-20,399,1,Icure Pharmaceutical Inc.,Alzheimer Disease
+NCT03095508,PHASE3,2017-02-22,2017-05-08,2017-05-08,229,14,Sandoz,Sore Throat
+NCT02657980,PHASE3,2015-04,2016-12,2016-12,96,1,Ybrain Inc.,Major Depressive Disorder
+NCT03837184,PHASE3,2019-05-31,2021-06-29,2021-06-29,2,4,Novartis Gene Therapies,Spinal Muscular Atrophy Type I
+NCT02791763,PHASE3,2016-06-06,2018-10-26,2018-10-26,355,56,GlaxoSmithKline,Anaemia
+NCT04001803,PHASE3,2019-07-08,2020-10-05,2022-03-18,115,9,ViiV Healthcare,HIV Infections
+NCT03378635,PHASE3,2017-12-07,2018-04-27,2018-05-25,170,5,Zealand Pharma,"Hypoglycemia|Diabetes Mellitus, Type 1"
+NCT03920228,PHASE2|PHASE3,2019-04-01,2020-09-19,2020-10-19,73,9,"Palvella Therapeutics, Inc.",Pachyonychia Congenita
+NCT02467868,PHASE3,2015-03,2015-09,2016-02,193,36,Mylan Inc.,Breast Neoplasms|Chemotherapy-Induced Febrile Neutropenia
+NCT02466386,PHASE3,2015-08-21,2020-01-03,2020-01-03,113,50,Shire,Attention Deficit Hyperactivity Disorder (ADHD)
+NCT03415178,PHASE3,2018-03-29,2018-08-09,2018-08-09,69,13,Sanofi,Hypercholesterolaemia
+NCT03539952,PHASE3,2018-09-03,2020-08-19,2022-01-18,77,15,Orphalan,Wilson Disease
+NCT03817580,PHASE3,2019-02-18,2019-06-04,2019-06-04,170,1,"Professional Disposables International, Inc.",Bacterial Microflora Reduction
+NCT03393494,PHASE3,2017-12-13,2018-09-30,2019-01-05,825,1,Padagis LLC,Acne Vulgaris
+NCT02666430,PHASE3,2015-12,2017-03,2017-07,127,81,Mylan Inc.,Type 1 Diabetes Mellitus
+NCT02914535,PHASE3,2017-02-23,2026-09-08,2026-09-08,1173,323,Alfasigma S.p.A.,Ulcerative Colitis
+NCT02476006,PHASE3,2015-06-23,2019-04-12,2019-04-12,998,153,Sanofi,Hypercholesterolemia
+NCT03812900,PHASE2|PHASE3,2018-11-27,2019-06-05,2019-06-07,246,1,A. Vogel AG,Respiratory Tract Infections
+NCT03460652,PHASE3,2018-03-13,2019-06-20,2019-07-09,282,19,Zevra Therapeutics,ADHD
+NCT02623738,PHASE2|PHASE3,2015-12-06,2017-02-10,2017-02-10,253,1,"Santen Pharmaceutical Co., Ltd.",Primary Open Angle Glaucoma|Ocular Hypertension
+NCT03461211,PHASE3,2018-04-16,2020-06-08,2021-02-17,51,13,Amgen,Thyroid Eye Disease
+NCT03005106,PHASE3,2017-05-30,2019-07-31,2020-03-27,71,16,"Stratatech, a Mallinckrodt Company","Burn, Thermal"
+NCT02688985,PHASE3,2016-04-29,2023-04-11,2023-04-11,131,17,"Genentech, Inc.","Relapsing Multiple Sclerorsis|Multiple Sclerosis, Primary Progressive"
+NCT03350542,PHASE3,2018-04-12,2020-01-16,2021-01-08,100,15,Boston Scientific Corporation,Coronary Artery Disease
+NCT02343744,PHASE3,2015-01-19,2015-12-04,2018-11-02,21,20,Janssen Pharmaceutical K.K.,Pustular Psoriasis
+NCT02452190,PHASE3,2015-09-28,2017-12-04,2018-01-31,468,226,"Teva Branded Pharmaceutical Products R&D, Inc.",Asthma
+NCT02430350,PHASE3,2015-05,2016-12,2016-12,1200,48,"Jiangsu Simcere Pharmaceutical Co., Ltd.",Acute Ischemic Stroke
+NCT03418935,PHASE3,2017-04-03,2020-03-31,2020-04-13,342,13,POLYSAN Scientific & Technological Pharmaceutical Company,"Jaundice, Obstructive"
+NCT03302234,PHASE3,2017-12-14,2020-09-01,2022-09-07,568,187,Merck Sharp & Dohme LLC,"Carcinoma, Non-Small-Cell Lung"
+NCT06192420,PHASE3,2018-02-26,2020-11-18,2021-03-25,809,1,Biologische Heilmittel Heel GmbH,Ankle Sprain
+NCT02549092,PHASE3,2015-10-26,2020-05-14,2022-11-18,89,38,AbbVie,Advanced Parkinson's Disease
+NCT02760433,PHASE3,2017-01-25,2019-09-12,2019-10-01,368,116,"R-Pharm International, LLC",Rheumatoid Arthritis
+NCT03989349,PHASE3,2019-06-30,2022-02-23,2022-09-26,787,138,Galderma R&D,Moderate-to-Severe Atopic Dermatitis
+NCT02547818,PHASE3,2015-09-15,2020-11-13,2020-11-18,620,121,"AZTherapies, Inc.",Alzheimer's Disease
+NCT03425539,PHASE3,2018-06-21,2021-08-17,2021-09-02,118,49,Idorsia Pharmaceuticals Ltd.,Fabry Disease
+NCT04029519,PHASE3,2018-12-21,2019-08-27,2019-08-27,84,6,Prollenium Medical Technologies Inc.,Lip Augmentation
+NCT03703375,PHASE3,2018-11-06,2021-02-10,2026-03-30,93,12,Celgene,"Lymphoma, T-Cell"
+NCT03591653,PHASE3,2018-10-29,2019-10-30,2019-11-26,291,1,"Shandong Luoxin Pharmaceutical Group Stock Co., Ltd.",Non-erosive Reflux Disease
+NCT03678753,PHASE3,2018-10-03,2025-05-26,2025-05-26,169,116,"SK Life Science, Inc.",Primary Generalized Epilepsy
+NCT03085797,PHASE3,2017-05-25,2019-12-11,2019-12-11,414,0,GlaxoSmithKline,Nasal Polyps
+NCT02794285,PHASE3,2016-06-30,2021-12-21,2021-12-21,559,175,AstraZeneca,Active Systemic Lupus Erythematosus
+NCT02272413,PHASE3,2015-07-08,2017-06-30,2018-11-16,671,189,Boehringer Ingelheim,"Carcinoma, Non-Small-Cell Lung"
+NCT03813238,PHASE3,2019-08-06,2022-07-05,2022-07-21,63,70,"Teva Branded Pharmaceutical Products R&D, Inc.","Cerebral Palsy, Dyskinetic"
+NCT03534453,PHASE3,2018-05-29,2025-01-27,2025-01-27,225,25,AstraZeneca,Relapsed Ovarian Cancer|Following Complete or Partial Response to Platinum Based Chemotherapy|Platinum Sensitive
+NCT02600559,PHASE3,2015-10,2016-07,2016-07,501,1,"Otonomy, Inc.",Otitis Media
+NCT03523117,PHASE3,2019-01-31,2020-12-22,2021-01-29,79,16,"American Regent, Inc.",Iron Deficiency Anemia
+NCT03654196,PHASE3,2018-03-16,2018-09-21,2018-09-21,246,1,"Hanlim Pharm. Co., Ltd.",Acute Bronchitis
+NCT03541668,PHASE3,2018-05-18,2020-04-14,2020-05-24,674,35,"Tasly Biopharmaceuticals Co., Ltd.",Acute Ischaemic Stroke
+NCT02260804,PHASE3,2015-11-09,2018-01-04,2019-09-04,258,1,Celltrion,Follicular Lymphoma
+NCT02362789,PHASE3,2015-01-04,2016-07-15,2016-07-15,132,19,Novartis Pharmaceuticals,Psoriasis
+NCT04468100,PHASE3,2017-08-30,2018-05-16,2018-05-16,100,14,AO GENERIUM,Cystic Fibrosis|Fibrosis
+NCT02808026,PHASE3,2016-06,2017-02,2017-02,20,1,"Daiichi Sankyo Co., Ltd.",Severe Hypertension
+NCT02443805,PHASE3,2015-09-29,2018-06-25,2018-06-25,1607,2,Stallergenes Greer,"Rhinitis, Allergic, Perennial|House Dust Mite Allergy"
+NCT02873936,PHASE3,2016-07-27,2018-03-20,2018-06-26,449,104,Gilead Sciences,Rheumatoid Arthritis
+NCT03195491,PHASE3,2017-12-25,2021-06-08,2021-06-08,400,30,Bristol-Myers Squibb,Lung Cancer|Non-Small Cell Lung Cancer
+NCT02493335,PHASE3,2016-01-15,2018-11-28,2020-12-11,204,1,Dr. Falk Pharma GmbH,Eosinophilic Esophagitis
+NCT02561806,PHASE3,2015-10,2016-05,2017-10,302,48,Eli Lilly and Company,Plaque Psoriasis
+NCT02676076,PHASE3,2016-02-17,2018-05-17,2018-05-17,1155,1,Chiesi Farmaceutici S.p.A.,Asthma
+NCT04143061,PHASE3,2019-12-30,2023-01-28,2023-01-28,1328,17,"Sanofi Pasteur, a Sanofi Company",Meningococcal Immunization|Healthy Volunteers
+NCT02576847,PHASE3,2015-10,2017-07-14,2018-02-08,307,28,"Maruho Co., Ltd.",Rosacea
+NCT03795922,PHASE3,2018-12-24,2020-03-13,2021-01-25,234,15,Medy-Tox,Glabellar Lines
+NCT02736240,PHASE3,2016-04-08,2017-12-03,2017-12-03,2760,0,"Walvax Biotechnology Co., Ltd.",Diseases Caused by Streptococcus Pneumoniae Serotypes
+NCT03120949,PHASE3,2017-07-04,2021-09-01,2021-09-01,2106,239,"R-Pharm International, LLC",Rheumatoid Arthritis
+NCT02476422,PHASE3,2015-04,2015-08,2015-08,328,1,Novartis Pharmaceuticals,Post Operative Dental Pain
+NCT03731091,PHASE3,2018-10-31,2020-03-17,2020-03-17,494,30,Glenmark Pharmaceuticals Ltd. India,Psoriasis Vulgaris
+NCT03151993,PHASE3,2017-03-18,2019-03-23,2019-06-20,336,18,"Supergene, LLC",Ischemic Stroke
+NCT03305016,PHASE3,2017-11-13,2019-03-19,2019-03-19,146,24,Ascendis Pharma Endocrinology Division A/S,"Growth Hormone Deficiency, Pediatric|Endocrine System Diseases|Hormone Deficiency|Pituitary Diseases"
+NCT03526549,PHASE3,2018-04-26,2021-10-08,2021-10-08,483,42,"Endo USA Inc., a Keenova Therapeutics Company",Edematous Fibrosclerotic Panniculopathy|Cellulite
+NCT02723773,PHASE3,2016-04-16,2023-06-28,2024-01-30,7539,161,GlaxoSmithKline,Herpes Zoster|Herpes Zoster Vaccine
+NCT05560945,PHASE3,2019-04-15,2022-03-12,2022-03-12,6000,3,Colgate Palmolive,Dental Caries
+NCT04203342,PHASE3,2019-12-11,2020-05-28,2020-07-13,682,3,Douglas Pharmaceuticals America Ltd,Tinea Pedis
+NCT03169725,PHASE2|PHASE3,2017-05-31,2019-01-18,2019-06-14,1417,3,LG Chem,Poliomyelitis
+NCT03738397,PHASE3,2019-02-21,2020-08-27,2020-12-09,673,159,AbbVie,Atopic Dermatitis
+NCT03502616,PHASE3,2018-06-07,2019-12-19,2020-08-20,270,99,Pfizer,Ankylosing Spondylitis
+NCT04166058,PHASE3,2019-11-19,2025-06-05,2025-06-05,381,72,AbbVie,Irritable Bowel Syndrome With Constipation|Functional Constipation
+NCT03170271,PHASE3,2017-07-07,2019-09-25,2020-10-21,660,213,AstraZeneca,Asthma
+NCT03198507,PHASE3,2017-06-18,2018-10-24,2018-12-13,455,55,RedHill Biopharma Limited,Helicobacter Pylori Infection|Dyspepsia
+NCT02388737,PHASE3,2015-04-01,2018-12-24,2018-12-31,703,72,Takeda,Erosive Esophagitis
+NCT03853798,PHASE3,2019-03-21,2024-07-03,2024-07-03,90,42,"Agios Pharmaceuticals, Inc.",Pyruvate Kinase Deficiency
+NCT03123939,PHASE3,2017-04-24,2020-10-13,2020-10-13,69,11,Novartis Pharmaceuticals,Acute Lymphoblastic Leukemia
+NCT03001011,PHASE3,2017-06-07,2019-08-16,2019-08-16,202,38,Sanofi,Hyperphosphatemia
+NCT04134728,PHASE3,2019-10-31,2021-09-15,2022-02-01,550,131,GlaxoSmithKline,"Arthritis, Rheumatoid"
+NCT03358472,PHASE3,2017-12-01,2018-07-19,2025-10-30,89,73,Incyte Corporation,Head and Neck Cancer
+NCT02367911,PHASE3,2015-01,2015-08,2017-02,144,9,"Therapeutics, Inc.",Plaque Psoriasis
+NCT02656069,PHASE3,2017-03-15,2017-08-14,2017-09-25,80,7,Xeris Pharmaceuticals,"Hypoglycemia|Diabetes Mellitus, Type 1"
+NCT03205371,PHASE3,2016-11-07,2018-07-19,2018-07-19,1183,37,"Sanofi Pasteur, a Sanofi Company","Meningitis, Meningococcal"
+NCT03486457,PHASE3,2018-08-10,2021-04-28,2021-04-28,204,38,Pfizer,Psoriatic Arthritis
+NCT03785678,PHASE3,2019-03-02,2023-02-28,2023-02-28,458,97,"Genentech, Inc.",THROMBOLYSIS
+NCT02728752,PHASE3,2017-02-27,2019-11-05,2019-11-05,95,37,Octapharma,Dermatomyositis
+NCT03547167,PHASE3,2018-07-16,2020-01-20,2020-01-20,1515,78,Merck Sharp & Dohme LLC,Pneumococcal Infections
+NCT02587221,PHASE3,2016-09-30,2018-07-23,2018-07-23,6790,89,Seqirus,Influenza
+NCT02112578,PHASE3,2016-11-01,2017-04-01,2017-12-01,292,7,Apsen Farmaceutica S.A.,"Vertigo, Peripheral"
+NCT05150392,PHASE3,2018-07-11,2018-08-11,2020-08-14,1193,1,"Sinovac (Dalian) Vaccine Technology Co., Ltd.",Varicella
+NCT03073200,PHASE3,2017-03-28,2019-02-07,2021-03-23,201,69,Eli Lilly and Company,Plaque Psoriasis
+NCT03066778,PHASE3,2017-05-02,2019-12-02,2021-09-21,453,148,Merck Sharp & Dohme LLC,Small Cell Lung Cancer (SCLC)
+NCT03292952,PHASE3,2017-12-20,2018-05-16,2018-05-16,155,5,Zevra Therapeutics,ADHD
+NCT02691299,PHASE3,2015-12-09,2018-09-21,2018-11-16,527,11,Hutchison Medipharma Limited,NSCLC
+NCT03874013,PHASE3,2017-12-07,2020-03-06,2020-03-06,44,46,"OPKO Health, Inc.",Growth Hormone Deficiency
+NCT02545049,PHASE3,2015-09-17,2021-02-02,2021-02-02,7352,975,Bayer,Diabetic Kidney Disease
+NCT03792100,PHASE3,2019-01-03,2020-01-23,2020-01-23,273,8,Fresenius Kabi,Parenteral Nutrition|Surgery
+NCT03168334,PHASE3,2017-07-11,2018-07-24,2018-07-24,801,45,"Bausch Health Americas, Inc.",Acne Vulgaris
+NCT03351166,PHASE3,2018-01-22,2018-10-23,2018-11-20,25,20,Bayer,"Anemia|Renal Insufficiency, Chronic"
+NCT03098797,PHASE2|PHASE3,2017-07-05,2018-10-05,2021-10-11,12,1,Stealth BioTherapeutics Inc.,Barth Syndrome
+NCT03526861,PHASE3,2018-06-19,2020-04-15,2021-03-16,301,87,LEO Pharma,Atopic Dermatitis
+NCT02706483,PHASE3,2016-01,2017-05,2017-06,2272,204,"Bausch Health Americas, Inc.",Irritable Bowel Syndrome
+NCT02580591,PHASE3,2015-12-22,2017-09-12,2017-09-20,977,189,Boehringer Ingelheim,"Diabetes Mellitus, Type 1"
+NCT02605837,PHASE3,2015-12-07,2019-01-24,2019-02-15,318,77,Shire,Eosinophilic Esophagitis (EoE)
+NCT03451292,PHASE3,2018-07-24,2024-05-21,2024-05-21,410,66,Grifols Therapeutics LLC,Decompensated Cirrhosis and Ascites
+NCT03198000,PHASE3,2017-06-28,2017-07-21,2017-07-21,120,1,Johnson & Johnson Consumer Inc. (J&JCI),Ophthalmic Solutions
+NCT03439137,PHASE3,2018-02-14,2018-12-12,2019-07-16,323,28,Tanabe Pharma Corporation,Anemia; Hemodialysis Dependent Chronic Kidney Disease
+NCT03102606,PHASE3,2018-05-29,2018-12-12,2021-02-08,105,18,BeyondSpring Pharmaceuticals Inc.,Chemotherapy-induced Neutropenia
+NCT02763579,PHASE3,2016-06-07,2018-04-24,2022-07-07,503,114,Hoffmann-La Roche,Small Cell Lung Carcinoma
+NCT02695719,PHASE3,2016-04-14,2017-01-20,2017-02-24,156,5,Takeda,Chronic Idiopathic Constipation
+NCT02609490,PHASE3,2015-09,2017-02,2018-08,304,1,Lee's Pharmaceutical Limited,Hypertension
+NCT04052932,PHASE3,2019-07-16,2021-07-14,2021-07-14,594,1,"Jiangsu HengRui Medicine Co., Ltd.",Gout
+NCT03731182,PHASE3,2019-01-23,2020-06-08,2020-06-08,104,19,Merck Sharp & Dohme LLC,Pneumococcal Infections
+NCT02578771,PHASE3,2015-10,2016-01,2016-01,123,1,"Zurex Pharma, Inc.",Surgical Site Infection
+NCT02381418,PHASE3,2015-03,2015-03,2015-03,120,1,Abbott,Influenza
+NCT03990805,PHASE3,2019-06-11,2020-12-15,2020-12-15,260,13,R-Bio,Degenerative Arthritis|Knee Osteoarthritis
+NCT02518139,PHASE3,2015-09,2017-06,2017-06,1060,1,Mylan Inc.,Chronic Obstructive Pulmonary Disease (COPD)
+NCT02891837,PHASE3,2016-08,2019-06,2019-07,189,29,"Asklepion Pharmaceuticals, LLC",Acute Lung Injury
+NCT03569891,PHASE3,2018-06-27,2021-09-22,2025-03-19,67,33,CSL Behring,Hemophilia B
+NCT03747458,PHASE3,2018-12-31,2026-03-31,2026-06-11,40,31,Optinose US Inc.,Bilateral Nasal Polyposis
+NCT04015375,PHASE3,2019-07-11,2020-02-03,2020-02-22,1150,13,Torrent Pharmaceuticals Limited,Acne Vulgaris
+NCT03268811,PHASE3,2017-08-23,2021-11-02,2021-11-02,9,6,Shire,Short Bowel Syndrome
+NCT03138733,PHASE3,2018-08-26,2022-03-11,2022-03-11,390,60,Basilea Pharmaceutica,Staphylococcus Aureus Bacteremia
+NCT03845140,PHASE3,2019-09-02,2021-10-11,2021-10-11,288,2,"Merck KGaA, Darmstadt, Germany",Schistosomiasis
+NCT03161093,PHASE3,2017-08-17,2019-09-09,2021-08-27,3307,139,Regeneron Pharmaceuticals,"Osteoarthritis, Knee|Osteoarthritis, Hip"
+NCT03002077,PHASE3,2017-02-03,2018-12-06,2018-12-06,617,128,"Naurex, Inc, an affiliate of Allergan plc","Depressive Disorder, Major"
+NCT02773576,PHASE3,2016-04,2017-09,2017-09,140,1,Braeburn Pharmaceuticals,Schizophrenia
+NCT03489941,PHASE3,2018-04-07,2018-04-29,2018-04-29,65,1,Bausch & Lomb Incorporated,Allergic Conjunctivitis
+NCT02474355,PHASE3,2015-09-18,2019-04-18,2019-04-18,3017,201,AstraZeneca,Lung Cancer
+NCT02297945,PHASE3,2015-04,2019-11,2020-04-29,50,36,HRA Pharma,Cushing's Syndrome
+NCT02453555,PHASE3,2015-05-14,2016-08-26,2017-03-27,275,40,Boehringer Ingelheim,"Diabetes Mellitus, Type 2"
+NCT03376789,PHASE3,2017-11-29,2018-09-25,2019-01-10,219,38,Mylan Inc.,"Diabetes Mellitus, Type 1"
+NCT03183128,PHASE3,2017-07-10,2020-07-03,2020-09-29,182,56,"Seres Therapeutics, Inc.",Clostridium Difficile Infection
+NCT02736955,PHASE3,2016-06-13,2017-06-30,2017-06-30,161,27,Neurocrine Biosciences,Tardive Dyskinesia
+NCT02932410,PHASE3,2017-10-24,2024-08-28,2025-11-27,165,85,Actelion,Pulmonary Arterial Hypertension
+NCT03995485,PHASE3,2017-06-07,2018-01-25,2018-03-07,371,19,"Kawin Technology Share-holding Co., Ltd.","Hepatitis C, Chronic"
+NCT02702401,PHASE3,2016-05-26,2019-01-02,2021-09-22,413,0,Merck Sharp & Dohme LLC,Hepatocellular Carcinoma
+NCT03713619,PHASE3,2019-01-31,2021-10-01,2022-07-26,544,111,Novartis Pharmaceuticals,Hidradenitis Suppurativa
+NCT04066023,PHASE2|PHASE3,2019-10-03,2021-04-14,2021-04-14,42,12,Zosano Pharma Corporation,Cluster Headache
+NCT03548584,PHASE3,2018-05-16,2022-05-23,2022-06-01,345,1,"Otsuka Pharmaceutical Development & Commercialization, Inc.",Agitation Associated With Alzheimer's Dementia|Alzheimer Dementia
+NCT03485911,PHASE3,2018-02-06,2019-04-10,2022-04-06,121,47,BioCryst Pharmaceuticals,Hereditary Angioedema|HAE
+NCT04115488,PHASE3,2019-10-01,2021-08-23,2022-02-07,265,48,Polpharma Biologics S.A.,Relapsing-Remitting Multiple Sclerosis (RRMS)
+NCT04063163,PHASE3,2019-09-12,2024-05-07,2024-05-07,585,5,Shanghai Henlius Biotech,Extensive Stage Small Cell Lung Cancer
+NCT02896101,PHASE3,2016-08,2017-06,2017-06,755,27,Glenmark Pharmaceuticals Ltd. India,Atopic Dermatitis
+NCT03744104,PHASE3,2018-10-11,2019-10-08,2019-10-08,2688,2,Shanghai Institute Of Biological Products,Influenza
+NCT02597803,PHASE2|PHASE3,2015-09,2016-06,2016-07,317,1,"ReGenTree, LLC",Dry Eye Syndrome
+NCT03047395,PHASE3,2017-02-27,2023-11-29,2023-11-29,2170,233,AbbVie,Psoriasis
+NCT03846453,PHASE3,2019-03-10,2019-11-22,2019-11-22,637,12,"HanAll BioPharma Co., Ltd.",Dry Eye
+NCT02418585,PHASE3,2015-08-07,2017-06-01,2017-11-06,236,48,"Janssen Research & Development, LLC",Treatment-resistant Depression
+NCT02332590,PHASE3,2015-01-28,2016-01-20,2020-12-29,369,86,Sanofi,Rheumatoid Arthritis
+NCT03306043,PHASE3,2017-11-13,2019-12-30,2019-12-30,102,36,GlaxoSmithKline,Hypereosinophilic Syndrome
+NCT04211363,PHASE3,2019-12-20,2020-11-16,2020-11-16,439,40,"Arcutis Biotherapeutics, Inc.",Chronic Plaque Psoriasis
+NCT02547441,PHASE3,2015-12,2017-07-05,2018-04-13,463,41,"Maruho Co., Ltd.",Rosacea
+NCT03129100,PHASE3,2017-05-09,2020-05-26,2021-05-27,773,127,Eli Lilly and Company,Axial Spondyloarthritis
+NCT03769090,PHASE3,2018-12-13,2021-08-19,2022-02-07,3132,345,Bond Avillion 2 Development LP,Asthma
+NCT02981446,PHASE3,2017-01,2019-01,2019-01,370,1,"Santen Pharmaceutical Co., Ltd.",Open Angle Glaucoma or Ocular Hypertension
+NCT02974153,PHASE3,2016-11,2017-11,2018-04,1121,144,"Alder Biopharmaceuticals, Inc.",Migraine Disorders
+NCT02348489,PHASE3,2015-03-19,2018-05-31,2019-06-17,815,135,"Astex Pharmaceuticals, Inc.","Leukemia, Myeloid, Acute"
+NCT02954354,PHASE3,2016-12-08,2017-04-04,2017-04-24,1436,0,Shionogi,Influenza
+NCT02614261,PHASE3,2015-11-30,2017-03-16,2021-07-14,1117,117,Eli Lilly and Company,Chronic Migraine
+NCT03089944,PHASE3,2017-04-28,2019-07-31,2019-11-08,343,113,AbbVie,Hepatitis C Virus (HCV)
+NCT03676192,PHASE3,2019-02-01,2021-04-22,2023-09-19,689,1,Celltrion,Adenocarcinoma of Lung
+NCT03338023,PHASE3,2018-03-23,2020-03-05,2020-03-05,272,20,Eli Lilly and Company,Type 1 Diabetes
+NCT02550288,PHASE3,2015-09-29,2016-05-30,2016-05-30,309,0,Organon and Co,Hypercholesterolemia
+NCT03434379,PHASE3,2018-03-15,2020-08-31,2022-11-17,558,119,Hoffmann-La Roche,"Carcinoma, Hepatocellular"
+NCT04163185,PHASE3,2019-10-08,2020-03-16,2020-03-23,302,41,"Axsome Therapeutics, Inc.",Migraine
+NCT02555150,PHASE3,2015-09,2017-01,2017-01,40,1,"Rhodes Pharmaceuticals, L.P.",Attention Deficit Hyperactivity Disorder
+NCT05074589,PHASE3,2018-01-25,2021-11-18,2022-03-10,298,1,"Jiangsu HengRui Medicine Co., Ltd.",Second-line Treatment for Locally Advanced or Metastatic Pancreatic Cancer After Treatment Failure With Gemcitabine-based Therapy
+NCT04124926,PHASE3,2019-10-28,2021-07-29,2021-08-24,1027,157,"Phathom Pharmaceuticals, Inc.",Erosive Esophagitis
+NCT02354508,PHASE3,2015-03-31,2018-01-08,2018-09-27,123,50,Novartis Pharmaceuticals,Acromegaly
+NCT02862977,PHASE3,2017-11-10,2019-06-05,2019-12-20,414,6,EMS,Musculoskeletal Pain
+NCT04129398,PHASE3,2019-12-27,2022-10-06,2022-10-06,22,4,Merck Sharp & Dohme LLC,Cytomegalovirus Infection|Cytomegalovirus Disease
+NCT02770716,PHASE3,2016-07-13,2019-07-24,2019-07-24,300,64,Mallinckrodt,Hepatorenal Syndrome
+NCT02794168,PHASE3,2016-06,2020-06-30,2020-06-30,224,29,veriNOS operations GmbH,Traumatic Brain Injury
+NCT03214380,PHASE3,2017-07-14,2018-08-14,2019-03-13,933,141,Eli Lilly and Company,Type 2 Diabetes Mellitus
+NCT03317015,PHASE3,2016-11-30,2017-07-10,2017-07-10,260,0,Sanofi,Rhinitis Allergic
+NCT02618408,PHASE3,2016-01-25,2019-09-04,2019-10-24,333,28,"Supernus Pharmaceuticals, Inc.",Attention Deficit Hyperactivity Disorder (ADHD)
+NCT03249376,PHASE3,2017-11-27,2019-03-01,2019-03-01,381,47,"Intra-Cellular Therapies, Inc.",Bipolar Depression
+NCT02738879,PHASE3,2016-05-09,2018-01-22,2018-01-30,746,0,Merck Sharp & Dohme LLC,Type 2 Diabetes Mellitus
+NCT03465722,PHASE3,2018-03-26,2020-03-09,2021-09-15,476,114,Blueprint Medicines Corporation,GIST
+NCT02412878,PHASE3,2015-09-09,2017-06-15,2019-01-07,478,140,Amgen,Multiple Myeloma
+NCT02497001,PHASE3,2015-08-10,2018-01-05,2018-01-05,1902,190,"Pearl Therapeutics, Inc.",COPD
+NCT02680041,PHASE3,2016-06-01,2017-11-01,2017-11-01,221,17,Blue Earth Diagnostics,Prostate Cancer
+NCT04172831,PHASE3,2019-12-09,2020-10-29,2020-10-29,503,39,"Tonix Pharmaceuticals, Inc.",Fibromyalgia
+NCT03280537,PHASE3,2017-11-21,2019-03-07,2019-03-07,127,45,Hoffmann-La Roche,Nasal Polyps|Chronic Rhinosinusitis
+NCT04048343,PHASE3,2019-06-10,2021-03-18,2021-03-18,65,5,AstraZeneca,Severe Asthma
+NCT03349710,PHASE3,2017-12-15,2019-10-14,2019-10-14,74,55,Bristol-Myers Squibb,Squamous Cell Carcinoma of the Head and Neck
+NCT03372200,PHASE3,2018-01-09,2018-06-04,2018-07-05,203,1,"Mochida Pharmaceutical Company, Ltd.",Hyperuricemia With or Without Gout
+NCT02632175,PHASE3,2015-11-26,2025-04-08,2025-04-08,59,16,AbbVie,Ulcerative Colitis
+NCT02607800,PHASE3,2015-11-16,2016-10-10,2017-01-11,943,93,Gilead Sciences,Hepatitis C
+NCT03652064,PHASE3,2018-11-06,2024-05-07,2026-04-21,395,114,"Janssen Research & Development, LLC",Multiple Myeloma
+NCT02400632,PHASE3,2015-06,2019-07-30,2019-12-30,60,3,Scitech Produtos Medicos SA,Coronary Artery Disease
+NCT02431702,PHASE3,2015-07-08,2019-11-12,2019-11-12,337,38,"Janssen Scientific Affairs, LLC",Schizophrenia|Psychotic Disorders
+NCT04058366,PHASE3,2019-12-05,2022-12-16,2022-12-16,251,84,Vertex Pharmaceuticals Incorporated,Cystic Fibrosis
+NCT02335346,PHASE3,2015-01,2016-03,2016-03,93,1,Eli Lilly and Company,Osteoarthritis of the Knee
+NCT03491462,PHASE3,2018-07-31,2020-12-18,2020-12-18,245,29,ZevraDenmark,Amyotrophic Lateral Sclerosis
+NCT03067688,PHASE3,2017-04-11,2018-03-27,2018-03-27,202,1,Yuhan Corporation,Hypertension|Hyperlipidemia
+NCT03561701,PHASE3,2018-08-23,2020-10-13,2021-08-03,425,14,Mycovia Pharmaceuticals Inc.,Recurrent Vulvovaginal Candidiasis

@@ -42,6 +42,8 @@ SCENARIOS = {
     "base": ROOT / "config" / "scenario_base.yaml",
     "high_amendment": ROOT / "config" / "scenario_high_amendment.yaml",
 }
+# Every scenario, including the calibrated one (opt-in via tradeoff_cc.py --scenarios).
+ALL_SCENARIOS = {**SCENARIOS, "calibrated": ROOT / "config" / "scenario_calibrated.yaml"}
 INTERVALS = [28, 42, 56, 84, 90]
 WINDOWS = [14, 28]
 
